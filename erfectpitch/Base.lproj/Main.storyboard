@@ -16,15 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qve-Sg-BP9">
-                                <rect key="frame" x="139" y="426" width="136" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qve-Sg-BP9">
+                                <rect key="frame" x="182.5" y="433" width="49" height="30"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Record"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qve-Sg-BP9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DOG-NY-Yck"/>
+                            <constraint firstItem="Qve-Sg-BP9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pod-KS-Tzf"/>
+                            <constraint firstItem="Qve-Sg-BP9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QhJ-3D-Pxa"/>
+                            <constraint firstItem="Qve-Sg-BP9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uGU-LH-Npf"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
