@@ -17,23 +17,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qve-Sg-BP9">
-                                <rect key="frame" x="182.5" y="438" width="49" height="30"/>
+                                <rect key="frame" x="120" y="438" width="174" height="30"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Record"/>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bpi-4K-O82"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap to record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5m-rA-oD3">
-                                <rect key="frame" x="94" y="476" width="227" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5m-rA-oD3">
+                                <rect key="frame" x="156.5" y="476" width="101" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XzS-Rz-Xtz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XzS-Rz-Xtz" userLabel="Stop Recording">
                                 <rect key="frame" x="152" y="505" width="110" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Stop Recording "/>
                                 <connections>
@@ -44,8 +42,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="U5m-rA-oD3" firstAttribute="centerX" secondItem="Qve-Sg-BP9" secondAttribute="centerX" id="4yM-d8-uac"/>
                             <constraint firstItem="Qve-Sg-BP9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Vnt-Ff-Evz"/>
+                            <constraint firstItem="XzS-Rz-Xtz" firstAttribute="centerX" secondItem="U5m-rA-oD3" secondAttribute="centerX" id="alM-8h-8ql"/>
+                            <constraint firstItem="U5m-rA-oD3" firstAttribute="top" secondItem="Qve-Sg-BP9" secondAttribute="bottom" constant="8" id="fIK-eQ-o98"/>
+                            <constraint firstItem="U5m-rA-oD3" firstAttribute="leading" secondItem="Qve-Sg-BP9" secondAttribute="trailing" constant="-137.5" id="qdh-Vw-fAt"/>
+                            <constraint firstItem="XzS-Rz-Xtz" firstAttribute="top" secondItem="U5m-rA-oD3" secondAttribute="bottom" constant="8" id="uEJ-yS-t6R"/>
                             <constraint firstItem="Qve-Sg-BP9" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="vUD-xF-WZa"/>
+                            <constraint firstItem="U5m-rA-oD3" firstAttribute="leading" secondItem="Qve-Sg-BP9" secondAttribute="trailing" constant="-137.5" id="zNU-uC-XVv"/>
                         </constraints>
                     </view>
                     <connections>
