@@ -41,6 +41,7 @@
                                 </state>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WEs-eQ-8s8"/>
+                                    <segue destination="RjY-tu-28M" kind="show" id="KVc-t8-6rL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -75,8 +76,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="PY8-Wa-Kur"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.14368078000100037" green="0.57481449842453003" blue="0.56833275650694304" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="0CN-MT-Z9e"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zT-iX-5rY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
