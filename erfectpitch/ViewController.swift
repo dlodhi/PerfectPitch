@@ -20,7 +20,13 @@ class ViewController: UIViewController {
         print("viewWillAppear is called ")
     }
     
-
+    
+    @IBAction func recordButton(_ sender: Any) {
+    }
+    
+    @IBAction func stopRecordingButton(_ sender: Any) {
+    }
+    
     @IBAction func recordAudio(_ sender: Any) {
         print("Record Button was clicked")
         Recording_label.text = "Recording in Progress"
