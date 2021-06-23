@@ -9,9 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+ 
     @IBOutlet weak var Recording_label: UILabel!
+    
+    @IBOutlet weak var recordingButton: UIButton!
+
+    @IBOutlet weak var stopRecordingButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("viewDidLoad is called ")
+        stopRecordingButton.isEnabled=false
         // Do any additional setup after loading the view.
     }
     
@@ -20,22 +30,24 @@ class ViewController: UIViewController {
         print("viewWillAppear is called ")
     }
     
-    
-    @IBAction func recordButton(_ sender: Any) {
+     override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
     
-    @IBAction func stopRecordingButton(_ sender: Any) {
-    }
-    
-    @IBAction func recordAudio(_ sender: Any) {
-        print("Record Button was clicked")
+    @IBAction func startRecording(_ sender: Any) {
         Recording_label.text = "Recording in Progress"
+        stopRecordingButton.isEnabled=true
+        recordingButton.isEnabled=false
+         
     }
-    
+   
+ 
     @IBAction func stopRecording(_ sender: Any) {
-        print("Recording was stopped ")
-        Recording_label.text = "Recording is stopped"
+        Recording_label.text = "Tap to Record"
+        stopRecordingButton.isEnabled=false
+        recordingButton.isEnabled=true
     }
+
     
 }
 
