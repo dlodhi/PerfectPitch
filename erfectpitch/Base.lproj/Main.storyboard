@@ -41,7 +41,6 @@
                                 </state>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WEs-eQ-8s8"/>
-                                    <segue destination="RjY-tu-28M" kind="show" id="KVc-t8-6rL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,17 +61,18 @@
                         <outlet property="Recording_label" destination="2ea-r6-zTA" id="HCc-G2-LyW"/>
                         <outlet property="recordingButton" destination="Paa-27-9RG" id="HUz-Xe-WcX"/>
                         <outlet property="stopRecordingButton" destination="vI2-fT-uKZ" id="qxf-ET-Tft"/>
+                        <segue destination="RjY-tu-28M" kind="show" identifier="stopRecording" id="k2t-PC-eQq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sound View Controller-->
         <scene sceneID="Tie-wy-nnY">
             <objects>
-                <viewController id="RjY-tu-28M" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pNr-PF-rI6">
+                <viewController id="RjY-tu-28M" customClass="PlaySoundViewController" customModule="erfectpitch" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pNr-PF-rI6" customClass="plays">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="PY8-Wa-Kur"/>
@@ -82,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zT-iX-5rY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1870" y="94"/>
+            <point key="canvasLocation" x="1854" y="94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ryW-ti-qJb">
