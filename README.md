@@ -1,6 +1,9 @@
 # PerfectPitch
 
+PerfectPitch is a simple ios app that uses the phone's microphone to record audio and apply different audio effects to the recorded audio. 
+
 Frameworks:
+
 [Foundation](https://developer.apple.com/documentation/foundation)
 
 [UIKit](https://developer.apple.com/documentation/uikit)
