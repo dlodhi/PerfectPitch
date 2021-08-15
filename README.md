@@ -2,12 +2,12 @@
 
 
 <p align="center">
-  <img src="/SC1.png" width="350" title="hover text">
-  <img src="/SC2.png" width="350" alt="accessibility text">
+  <img src="/SC1.png" width="350"  >
+  <img src="/SC2.png" width="350" >
 </p>
-![SC1](/SC1.png)
+ 
 Frameworks:
-*Foundation
-*UIKit
-*AVFoundation
+[Foundation](https://developer.apple.com/documentation/foundation)
+[UIKit](https://developer.apple.com/documentation/uikit)
+[AVFoundation](https://developer.apple.com/documentation/avfoundation)
 
